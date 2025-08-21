@@ -1,0 +1,33 @@
+# Voice CLI Control Requirements
+
+# Core dependencies
+numpy>=1.26.0,<2.0
+websockets>=13.1
+asyncio-mqtt>=0.16.2
+
+# Terminal control
+pexpect>=4.9.0; sys_platform != 'win32'
+pywinpty>=2.0.13; sys_platform == 'win32'
+psutil>=5.9.8
+
+# Rich terminal UI
+rich>=13.7.1
+prompt-toolkit>=3.0.43
+
+# Audio processing
+pyaudio>=0.2.14
+sounddevice>=0.4.6
+scipy>=1.14.1
+
+# Whisper integration
+openai-whisper>=20240930
+faster-whisper>=1.1.5
+
+# Platform-specific
+windows-curses>=2.3.2; sys_platform == 'win32'
+pyobjc-framework-Cocoa>=10.1; sys_platform == 'darwin'
+
+# Utilities
+python-dotenv>=1.0.1
+click>=8.1.7
+pydantic>=2.10.2
